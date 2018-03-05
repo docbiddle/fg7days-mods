@@ -8,7 +8,7 @@ using System.Linq;
 public class BiggerBackPack : IPatcherMod
 {
     private sbyte OldInventorySize = 32;
-    private sbyte NewInventorySize = 45;
+    private sbyte NewInventorySize = 72;
 
     public bool Patch(ModuleDefinition module)
     {
