@@ -1,0 +1,82 @@
+<configs>
+	<!--  This tells SDX to add to the blocks.xml -->
+	<config name="blocks">	
+		<!-- This tells SDX to add the following block to the bottom of the block list -->
+		<append xpath="/blocks">	
+			<block id="" name="zombiePinup01">
+				<property name="CustomIcon" value="ui_game_symbol_pinup01" />
+				<property name="Material" value="paper" />
+				<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#PinupPosters?PinupPoster01Prefab" />
+				<property name="CanPickup" value="true" />
+				<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+				<property name="DescriptionKey" value="Pinups" />
+				<drop event="Destroy" count="0" />
+				<drop event="Destroy" name="paper" count="1" prob="1" />
+				<drop event="Fall" name="paper" count="0" prob="1" stick_chance="1" />
+				<drop event="Fall" name="paper" count="1" prob=".75" stick_chance="1" />
+			</block>
+			<block id="" name="zombiePinup02">
+				<property name="CustomIcon" value="ui_game_symbol_pinup02" />
+				<property name="Material" value="paper" />
+				<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#PinupPosters?PinupPoster02Prefab" />
+				<property name="CanPickup" value="true" />
+				<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+				<property name="DescriptionKey" value="Pinups" />
+				<drop event="Destroy" count="0" />
+				<drop event="Destroy" name="paper" count="1" prob="1" />
+				<drop event="Fall" name="paper" count="0" prob="1" stick_chance="1" />
+				<drop event="Fall" name="paper" count="1" prob=".75" stick_chance="1" />
+			</block>
+				<block id="" name="zombiePinup03">
+				<property name="CustomIcon" value="ui_game_symbol_pinup03" />
+				<property name="Material" value="paper" />
+				<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#PinupPosters?PinupPoster03Prefab" />
+				<property name="CanPickup" value="true" />
+				<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+				<property name="DescriptionKey" value="Pinups" />
+				<drop event="Destroy" count="0" />
+				<drop event="Destroy" name="paper" count="1" prob="1" />
+				<drop event="Fall" name="paper" count="0" prob="1" stick_chance="1" />
+				<drop event="Fall" name="paper" count="1" prob=".75" stick_chance="1" />
+			</block>
+				<block id="" name="zombiePinup04">
+				<property name="CustomIcon" value="ui_game_symbol_pinup04" />
+				<property name="Material" value="paper" />
+				<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#PinupPosters?PinupPoster04Prefab" />
+				<property name="CanPickup" value="true" />
+				<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+				<property name="DescriptionKey" value="Pinups" />
+				<drop event="Destroy" count="0" />
+				<drop event="Destroy" name="paper" count="1" prob="1" />
+				<drop event="Fall" name="paper" count="0" prob="1" stick_chance="1" />
+				<drop event="Fall" name="paper" count="1" prob=".75" stick_chance="1" />
+			</block>
+		</append>
+	</config>
+	
+	<!-- Adding a new recipe for the mod -->
+	<config name="recipes">
+		<append xpath="/recipes" >
+			<recipe name="zombiePinup01" count="1" craft_area="workbench">
+				<ingredient name="paper" count="10" />
+				<ingredient name="glue" count="2" />
+			</recipe>			
+			<recipe name="zombiePinup02" count="1" craft_area="workbench">
+				<ingredient name="paper" count="10" />
+				<ingredient name="glue" count="2" />
+			</recipe>			
+			<recipe name="zombiePinup03" count="1" craft_area="workbench">
+				<ingredient name="paper" count="10" />
+				<ingredient name="glue" count="2" />
+			</recipe>			
+			<recipe name="zombiePinup04" count="1" craft_area="workbench">
+				<ingredient name="paper" count="10" />
+				<ingredient name="glue" count="2" />
+			</recipe>
+		</append>
+	</config>
+</configs>
