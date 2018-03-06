@@ -1,5 +1,5 @@
 <configs>
-	<config name="recipies">
+	<config name="recipes">
 			<append xpath="/recipes">
 				<recipe name="ForgedTitanium" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">
 					<ingredient name="unit_clay" count="2"/>
