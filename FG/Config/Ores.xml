@@ -82,6 +82,35 @@
 	<config name="items">	
 		<append xpath="/items">	
 		
+		<item id="*" name="unit_titanium">
+			<property name="CustomIcon" value="scrapIron" />
+			<property name="CustomIconTint" value="00FBB5" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="titanium" />
+			<property name="HoldType" value="45" />
+			<property name="Stacknumber" value="30000" />
+			<property name="Weight" value="1" />
+			<property name="Group" value="Resources" />
+			<property name="ResourceUnit" value="true" />
+			<property name="MeltTimePerUnit" value="0.1" />
+			<property name="UserHidden" value="true" />
+			<property name="CraftingIngredientTime" value="0.15" />
+			<property name="CreativeMode" value="Dev"/>
+		</item>
+
+		<item id="*" name="unit_copper">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Extends" value="unit_iron" />
+			<property name="CustomIcon" value="scrapIron" />
+			<property name="CustomIconTint" value="FFB200" />
+			<property name="Material" value="copper" />
+			<property name="ResourceUnit" value="true" />
+			<property name="MeltTimePerUnit" value="0.1" />
+			<property name="UserHidden" value="true" />
+			<property name="CraftingIngredientTime" value="0.15" />
+		</item>
+		
 			<item id="*" name="TitaniumFragment">
 				<property name="CustomIcon" value="TitaniumOre" />
 				<property name="Meshfile" value="Items/Misc/sackPrefab" />
