@@ -1,0 +1,204 @@
+<configs>
+	<config name="materials">
+		<append xpath="/materials">
+		<!-- Copper Material -->
+			<material id="copper">
+				<property name="damage_category" value="metal" />
+				<property name="surface_category" value="metal" />
+				<property name="forge_category" value="copper" />
+				<property name="Hardness" type="float" value="1" />
+				<property name="stepsound" value="metal" />
+				<property name="stability_glue" value="360" />
+				<property name="Mass" type="int" value="30" />
+				<property name="explosionresistance" value=".75" />
+				<property name="MaxDamage" value="1000" />
+				<property name="Experience" value="5.0"/>
+			</material>
+			<material id="carbonsteel">
+				<property name="damage_category" value="metal" />
+				<property name="surface_category" value="metal" />
+				<property name="forge_category" value="carbonsteel" />
+				<property name="Hardness" type="float" value="1" />
+				<property name="stepsound" value="metal" />
+				<property name="stability_glue" value="360" />
+				<property name="Mass" type="int" value="30" />
+				<property name="explosionresistance" value=".6" />
+				<property name="MaxDamage" value="1250" />
+				<property name="Experience" value="5.0"/>
+			</material>
+			<material id="titanium">
+				<property name="damage_category" value="metal" />
+				<property name="surface_category" value="metal" />
+				<property name="forge_category" value="titanium" />
+				<property name="Hardness" type="float" value="1" />
+				<property name="stepsound" value="metal" />
+				<property name="stability_glue" value="360" />
+				<property name="Mass" type="int" value="30" />
+				<property name="explosionresistance" value=".6" />
+				<property name="MaxDamage" value="1250" />
+				<property name="Experience" value="5.0"/>
+			</material>
+   			<material id="titanium_light">
+				<property name="damage_category" value="metal" />
+				<property name="surface_category" value="metal" />
+				<property name="forge_category" value="titanium" />
+				<property name="Hardness" type="float" value="1" />
+				<property name="stepsound" value="metal" />
+				<property name="stability_glue" value="360" />
+				<property name="Mass" type="int" value="30" />
+				<property name="explosionresistance" value=".75" />
+				<property name="MaxDamage" value="7500" />
+				<property name="Experience" value="5.0"/>
+			</material>
+   
+			<material id="titanium_medium">
+				<property name="damage_category" value="metal" />
+				<property name="surface_category" value="metal" />
+				<property name="forge_category" value="titanium" />
+				<property name="Hardness" type="float" value="1" />
+				<property name="stepsound" value="metal" />
+				<property name="stability_glue" value="380" />
+				<property name="Mass" type="int" value="30" />
+				<property name="explosionresistance" value=".8" />
+				<property name="MaxDamage" value="10000" />
+				<property name="Experience" value="5.0"/>
+			</material>
+   
+			<material id="titanium_hard">
+				<property name="damage_category" value="metal" />
+				<property name="surface_category" value="metal" />
+				<property name="forge_category" value="titanium" />
+				<property name="Hardness" type="float" value="1" />
+				<property name="stepsound" value="metal" />
+				<property name="stability_glue" value="400" />
+				<property name="Mass" type="int" value="30" />
+				<property name="explosionresistance" value=".85" />
+				<property name="MaxDamage" value="12500" />
+				<property name="Experience" value="5.0"/>
+			</material>
+		</append>
+	</config>
+
+	<config name="items">	
+		<append xpath="/items">	
+		
+			<item id="*" name="TitaniumFragment">
+				<property name="CustomIcon" value="TitaniumOre" />
+				<property name="Meshfile" value="Items/Misc/sackPrefab" />
+				<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+				<property name="Material" value="titanium" />
+				<property name="Weight" value="5" />
+				<property name="Stacknumber" value="10000" /> <!-- STK resource -->
+				<property name="SellableToTrader" value="false" />
+				<property name="HoldType" value="45" />
+				<property name="DropScale" value="3" />
+				<property name="EconomicValue" value="50" />
+				<property name="EconomicBundleSize" value="5" />
+				<property name="Group" value="Resources" />
+			</item>
+
+			<item id="*" name="ForgedTitanium">
+				<property name="CustomIcon" value="ForgedTitanium" />
+				<property name="Meshfile" value="Items/Crafting/ingotIron" />
+				<property name="HoldType" value="21" />
+				<property name="Material" value="titanium" />
+				<property name="Stacknumber" value="1000" /> <!-- STK resource -->
+				<property name="EconomicValue" value="64" />
+				<property name="Group" value="Resources" />
+				<property name="Weight" value="40" />
+				<property name="CraftingIngredientExp" value="15" />
+				<property name="CraftingIngredientTime" value="15" />
+				<property name="RepairTime" value="1" />
+				<property name="RepairAmount" value="400" />
+				<property name="CraftingSkillGroup" value="Construction" />
+			</item>
+			<item id="*" name="ForgedCarbonSteel">
+				<property name="CustomIcon" value="ForgedSteel" />
+				<property name="Meshfile" value="Items/Crafting/ingotIron" />
+				<property name="HoldType" value="21" />
+				<property name="Material" value="carbonsteel" />
+				<property name="Stacknumber" value="1000" /> <!-- STK resource -->
+				<property name="EconomicValue" value="64" />
+				<property name="Group" value="Resources" />
+				<property name="Weight" value="40" />
+				<property name="CraftingIngredientExp" value="15" />
+				<property name="CraftingIngredientTime" value="15" />
+				<property name="RepairTime" value="1" />
+				<property name="RepairAmount" value="300" />
+				<property name="CraftingSkillGroup" value="Construction" />
+			</item>
+			<item id="*" name="CopperFragment">
+				<property name="Extends" value="silverNugget" />
+				<property name="CustomIcon" value="CopperOre" />
+				<property name="Material" value="copper" />
+				<property name="EconomicValue" value="5" />
+				<property name="Weight" value="5" />
+				<property name="SellableToTrader" value="false" />
+				<property name="CraftingIngredientTime" value="5" />
+			</item>
+			<item id="*" name="ForgedCopper">
+				<property name="CustomIcon" value="ForgedCopper" />
+				<property name="Meshfile" value="Items/Crafting/ingotIron" />
+				<property name="HoldType" value="21" />
+				<property name="Material" value="copper" />
+				<property name="Stacknumber" value="1000" /> <!-- STK resource -->
+				<property name="EconomicValue" value="32" />
+				<property name="Group" value="Resources" />
+				<property name="Weight" value="40" />
+				<property name="CraftingIngredientExp" value="15" />
+				<property name="CraftingIngredientTime" value="15" />
+				<property name="RepairTime" value="1" />
+				<property name="RepairAmount" value="200" />
+				<property name="CraftingSkillGroup" value="Construction" />
+			</item>
+		</append>
+	</config>
+	
+	<config name="blocks">
+		<append xpath="/blocks">
+		<block id="74" name="titaniumOre">
+			<property name="Extends" value="ice" />
+			<property name="CustomIcon" value="ice" />
+			<property name="Material" value="Mmetal_medium" />
+			<property name="MaxDamage" value="1250" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="TitaniumFragment" count="19" prob="1.0" tool_category="harvestingTools"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="TitaniumFragment" count="36" prob=".75" stick_chance="0" />
+			<property name="CanMobsSpawnOn" value="true"/>
+		</block>
+
+		<block id="75" name="copperOre">
+			<property name="Extends" value="sandStone" />
+			<property name="CustomIcon" value="sandStone" />
+			<property name="Material" value="copper" />
+			<property name="MaxDamage" value="300" />
+			<property name="DropScale" value="2" />
+			<property class="RepairItems"> <property name="CopperFragment" value="10"/> </property>
+			<drop event="Harvest" name="CopperFragment" count="10" tool_category="harvestingTools"/>
+			<drop event="Harvest" name="crushedSand" count="0" tool_category="harvestingTools"/>
+			<drop event="Harvest" name="rockSmall" count="0" tool_category="harvestingTools"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="CopperFragment" count="10" prob="0.5" stick_chance="0" />
+			<drop event="Fall" name="crushedSand" count="0" prob="0" stick_chance="0"/>
+			<drop event="Fall" name="rockSmall" count="0" prob="0" stick_chance="0"/>
+			<property name="CanMobsSpawnOn" value="true" />
+		</block>
+		<!-- WOTW MOD -->
+		<block id="77" name="gravelPlusTitanium">
+			<property name="Extends" value="gravel"/>
+			<drop event="Harvest" name="TitaniumFragment" count="3" prob="0.25" tool_category="harvestingTools"/>
+			<drop event="Destroy" name="TitaniumFragment" count="5"/>
+			<property name="CreativeMode" value="Dev"/>
+		</block>
+
+		<!-- WOTW MOD -->
+		<block id="78" name="gravelPlusCopper">
+			<property name="Extends" value="gravel"/>
+			<drop event="Harvest" name="CopperFragment" count="3" prob="0.25" tool_category="harvestingTools"/>
+			<drop event="Destroy" name="CopperFragment" count="5"/>
+			<property name="CreativeMode" value="Dev"/>
+		</block>
+		</append>
+	</config>
+</configs>
