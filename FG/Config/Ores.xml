@@ -155,6 +155,7 @@
 	</config>
 	
 	<config name="blocks">
+
 		<append xpath="/blocks">
 		<block id="74" name="titaniumOre">
 			<property name="Extends" value="ice" />
@@ -199,6 +200,80 @@
 			<drop event="Destroy" name="CopperFragment" count="5"/>
 			<property name="CreativeMode" value="Dev"/>
 		</block>
+		</append>
+	</config>
+		<config name="biomes">
+		<append xpath="/worldgeneration/biomes/biome[@name='snow']/layers/layer[@depth='10']">
+			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
+			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
+			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
+			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
+		</append>
+		<append xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome/layers/layer[@depth='10']">
+			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
+			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
+			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
+			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
+		</append>
+		<append xpath="/worldgeneration/biomes/biome[@name='forest']/layers/layer[@depth='10']">
+			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
+			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
+			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
+			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
+		</append>
+		<append xpath="/worldgeneration/biomes/biome[@name='forest']/subbiome/layers/layer[@depth='10']">
+			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
+			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
+			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
+			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
+		</append>
+		<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/layers/layer[@depth='10']">
+			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
+			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
+			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
+			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
+		</append>
+		<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome/layers/layer[@depth='10']">
+			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
+			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
+			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
+			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
+		</append>
+		<append xpath="/worldgeneration/biomes/biome[@name='plains']/layers/layer[@depth='10']">
+			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
+			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
+			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
+			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
+		</append>
+		<append xpath="/worldgeneration/biomes/biome[@name='plains']/subbiome/layers/layer[@depth='10']">
+			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
+			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
+			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
+			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
+		</append>
+		<append xpath="/worldgeneration/biomes/biome[@name='wasteland']/layers/layer[@depth='10']">
+			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
+			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
+			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
+			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
+		</append>
+		<append xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome/layers/layer[@depth='10']">
+			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
+			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
+			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
+			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
+		</append>
+		<append xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/layers/layer[@depth='10']">
+			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
+			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
+			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
+			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
+		</append>
+		<append xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/subbiome/layers/layer[@depth='10']">
+			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
+			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
+			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
+			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
 		</append>
 	</config>
 </configs>
