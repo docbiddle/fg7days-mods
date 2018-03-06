@@ -33,6 +33,6 @@
 	</config>
 	
 	<config name="blocks">
-		<set xpath="//block[@name='forge']//property[@name='InputMaterials']/@value">iron,titanium,copper,lead,stone,clay</set>
+		<set xpath="//block[@name='forge']//property[@name='InputMaterials']/@value">iron,titanium,copper,lead,stone,clay,glass,brass</set>
 	</config>
 </configs>

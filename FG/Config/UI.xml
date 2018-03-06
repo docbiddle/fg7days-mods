@@ -1,0 +1,20 @@
+<configs>
+	<config name="XUi/windows">
+		<set xpath="/windows/window[@name='SMXForgeInput']/@height">245</set>
+		<set xpath="/windows/window[@name='SMXForgeInput']/@materials_accepted">iron,titanium,copper,lead,stone,clay,glass,brass</set>
+		<set xpath="/windows/window[@name='SMXForgeInput']/sprite[@name='backgroundMain']/@height">203</set>
+		<set xpath="/windows/window[@name='SMXForgeInput']/rect[@name='content']/@height">203</set>
+		<set xpath="/windows/window[@name='SMXForgeInput']/rect[@name='content']/grid/@rows">3</set>
+		<append xpath="/windows/window[@name='SMXForgeInput']/rect[@name='content']">
+			<sprite depth="1" color="[mediumGrey]" type="sliced" on_press="true" />
+		</append>
+		<set xpath="/windows/window[@name='SMXForgeInput']/grid/@cell_width">50</set>
+		<set xpath="/windows/window[@name='SMXForgeInput']/grid/@cell_hei">50</set>
+		<set xpath="/windows/window[@name='SMXForgeInput']/rect[@name='content2']/grid/@rows">8</set>
+		<set xpath="/windows/window[@name='SMXForgeInput']/rect[@name='content2']/grid/@pos">7,-3</set>
+		<set xpath="/windows/window[@name='SMXForgeInput']/rect[@name='content2']/grid/@cell_width">143</set>
+		<set xpath="/windows/window[@name='SMXForgeInput']/rect[@name='content2']/@height">198</set>
+		<set xpath="/windows/window[@name='windowForgeInput']/@materials_accepted">iron,titanium,copper,lead,stone,clay,glass,brass</set>
+		<set xpath="/windows/window[@name='windowForgeInput']/rect[@name='content2']/grid/@rows">8</set>
+	</config>
+</configs>
