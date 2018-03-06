@@ -14,6 +14,12 @@
 	<config_mods>
 		<import file="Config\Ores.xml" />
 		<import file="Config\Forging.xml" />
+		<!--
+		<import file="Config\Tools.xml" />
+		<import file="Config\Weapons.xml" />
+		<import file="Config\Ammo.xml" />
+		
+		-->
     </config_mods>
 	
 </mod>

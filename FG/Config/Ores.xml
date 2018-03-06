@@ -14,6 +14,18 @@
 				<property name="MaxDamage" value="1000" />
 				<property name="Experience" value="5.0"/>
 			</material>
+			<material id="silver">
+				<property name="damage_category" value="metal" />
+				<property name="surface_category" value="metal" />
+				<property name="forge_category" value="silver" />
+				<property name="Hardness" type="float" value="1" />
+				<property name="stepsound" value="metal" />
+				<property name="stability_glue" value="360" />
+				<property name="Mass" type="int" value="30" />
+				<property name="explosionresistance" value=".75" />
+				<property name="MaxDamage" value="1000" />
+				<property name="Experience" value="5.0"/>
+			</material>
 			<material id="carbonsteel">
 				<property name="damage_category" value="metal" />
 				<property name="surface_category" value="metal" />
@@ -110,7 +122,22 @@
 			<property name="UserHidden" value="true" />
 			<property name="CraftingIngredientTime" value="0.15" />
 		</item>
-		
+			<item id="*" name="ForgedSilver">
+				<property name="CustomIcon" value="ForgedSteel" />
+				<property name="CustomIconTint" value="D6F5FF"/>
+				<property name="Meshfile" value="Items/Crafting/ingotIron" />
+				<property name="HoldType" value="21" />
+				<property name="Material" value="silver" />
+				<property name="Stacknumber" value="1000" /> <!-- STK resource -->
+				<property name="EconomicValue" value="64" />
+				<property name="Group" value="Resources" />
+				<property name="Weight" value="40" />
+				<property name="CraftingIngredientExp" value="15" />
+				<property name="CraftingIngredientTime" value="2" />
+				<property name="RepairTime" value="1" />
+				<property name="RepairAmount" value="300" />
+				<property name="CraftingSkillGroup" value="Construction" />
+			</item>
 			<item id="*" name="TitaniumFragment">
 				<property name="CustomIcon" value="TitaniumOre" />
 				<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -151,7 +178,7 @@
 				<property name="Group" value="Resources" />
 				<property name="Weight" value="40" />
 				<property name="CraftingIngredientExp" value="15" />
-				<property name="CraftingIngredientTime" value="15" />
+				<property name="CraftingIngredientTime" value="2" />
 				<property name="RepairTime" value="1" />
 				<property name="RepairAmount" value="300" />
 				<property name="CraftingSkillGroup" value="Construction" />
