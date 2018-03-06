@@ -1,0 +1,15 @@
+<mod>
+	<info>
+		<author>308</author>
+		<name>CCTV - With Pan Tilt and Zoom</name>
+		<description>CCTV System with player controled pan, tilt, zoom and lights. Activate or change channels by selecting a channel using numpad 1, 2, 3 or 4 while looking at the screen. Only the active camera is enabled. When the screen is off all cameras are set to disabled. Use the left and right arrow keys to pan the active camera, up and down arrows to tilt, keypad + - to zoom, L to activate the light and E to turn the system off. A second system will override the first only if its in the same chunk. Known issues: You can turn the cameras off without turning the screen off if you press E when not looking at the screen. It doesnt work well in the snow.</description>
+		<mod_version>v2.03</mod_version>
+		<game_version>16.2</game_version>
+		<launcher_version>SDX7</launcher_version>
+	</info>
+	<help>Help/index.html</help>
+	<config_mods>
+		<import file="Configs\CCTVv2.xml" />
+	</config_mods>
+	
+</mod>

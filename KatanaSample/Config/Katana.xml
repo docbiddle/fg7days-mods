@@ -7,8 +7,16 @@
 			<!-- New item will be Katana -->
 			<item id="" name="katanamichonne">
 				<!-- Extend it from the machete, but add the custom mesh -->
-				<property name="Extends" value="machete"/>
+				<property name="Extends" value="machete" />
 				<property name="Meshfile" value="#michonnekatana?katana" />
+				<property class="Action0">
+					<property name="Range" value="2.8" />
+				</property>
+				<property class="Attributes">
+					<property name="EntityDamage" value="16,28" />
+					<property name="BlockDamage" value="4,10" />
+					<property name="DismembermentBaseChance" value="0.06,0.08" />
+				</property>
 			</item>
 		</append>
 	</config>

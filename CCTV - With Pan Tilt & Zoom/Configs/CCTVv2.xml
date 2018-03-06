@@ -1,0 +1,98 @@
+<configs>
+	<config name="blocks">
+		<append xpath="/blocks">
+			<block id="1616" name="CCTV Screen">
+				<property name="Class" value="CCTVScreen, Mods" />
+				<property name="Material" value="glass" />
+				<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#CCTV_v2_1?CCTVScreen_v2Prefab" />
+				<property name="StabilitySupport" value="false" />
+				<property name="RotationAllowed" value="pivotOnFloor" />
+				<property name="Weight" value="10" />
+				<property name="MultiBlockDim" value="2,2,1" />
+				<property name="CanPickup" value="true" />
+				<property name="ModelOffset" value="0,0,0" />
+			</block>
+		</append>
+		
+		<append xpath="/blocks">
+			<block id="1629" name="CCTVSystem">
+				<property name="CanPickup" value="true" />
+				<property name="CustomIcon" value="cntGarageStorage" />
+				<property name="Material" value="MCardboardLoot" />
+				<property name="MaxDamage" value="15" />
+				<property name="Texture" value="276,276,270,270,270,270" />
+				<drop event="Destroy" name="CCTVPanCam1" count="1" prob="1" />
+				<drop event="Destroy" name="CCTVPanCam2" count="1" prob="1" />
+				<drop event="Destroy" name="CCTVPanCam3" count="1" prob="1" />
+				<drop event="Destroy" name="CCTVPanCam4" count="1" prob="1" />
+				<drop event="Destroy" name="CCTV Screen" count="1" prob="1" />
+			</block>
+		</append>
+											<!-- Input Options -->
+											
+		<!-- ZoomLevel --> 			<!-- Lower this value to increase the zoom level. Increase it to lower the zoom level. Set it to 29.5 to disable zoom. -->
+		<!-- ZoomSpeed -->			<!-- Sets the speed the camera zooms in and out at -->
+		<!-- PanSpeed -->  			<!-- Sets the speeed that the camera pans left and right. Set to 0 to disable pan -->
+		<!-- MaxPanLeft/Right -->	<!-- Sets the max angle when panning, keep these numers even for best results. -->
+		<!-- TiltSpeed -->  		<!-- Sets the speeed that the camera tilts up and down. Set to 0 to disable tilt -->
+		<!-- HasLights -->  		<!-- If false lights are disabled. -->
+		<!-- InterfaceDisabled -->  <!-- If false all input other than changing channels is disabled, this will override the light setting above if set false. -->
+		<append xpath="/blocks">
+			<block id="1624" name="CCTVPanCam1">
+				<property name="Class" value="CCTVCam_1, Mods" />
+				<!-- Start Input Options -->
+				<property name="ZoomLevel" value="10" />
+				<property name="ZoomSpeed" value="0.4" />
+				<property name="PanSpeed" value="0.5" />
+				<property name="MaxPanLeft" value="-40" />
+				<property name="MaxPanRight" value="40" />
+				<property name="TiltSpeed" value="1" />
+				<property name="HasLights" value="true" />
+				<property name="InterfaceDisabled" value="false" />
+				<!-- End Input Options -->
+				<property name="ModelOffset" value="0,0,0" />
+				<property name="Place" value="TowardsPlacerInverted" />
+				<property name="CanPickup" value="true" />
+				<property name="Material" value="brass" />
+				<property name="Shape" value="ModelEntity" />
+				<property name="Mesh" value="opaque" />
+				<drop event="Destroy" count="0" prob="1" />
+				<property name="Model" value="#CCTV_v2_1?CCTVPanCam1_v2Prefab" />
+				<property class="RepairItems">
+					<property name="scrapIron" value="2" />
+				</property>
+			</block>
+		</append>
+		<append xpath="/blocks">
+			<block id="1625" name="CCTVPanCam2">
+				<property name="Extends" value="CCTVPanCam1" />
+				<property name="CustomIcon" value="CCTVPanCam1" />
+				<property name="Class" value="CCTVCam_2, Mods" />
+				<property name="Model" value="#CCTV_v2_1?CCTVPanCam2_v2Prefab" />
+			</block>
+		</append>
+		<append xpath="/blocks">
+			<block id="1626" name="CCTVPanCam3">
+				<property name="Extends" value="CCTVPanCam1" />
+				<property name="CustomIcon" value="CCTVPanCam1" />
+				<property name="Class" value="CCTVCam_3, Mods" />
+				<property name="Model" value="#CCTV_v2_1?CCTVPanCam3_v2Prefab" />
+			</block>
+		</append>
+		<append xpath="/blocks">
+			<block id="1627" name="CCTVPanCam4">
+				<property name="Extends" value="CCTVPanCam1" />
+				<property name="CustomIcon" value="CCTVPanCam1" />
+				<property name="Class" value="CCTVCam_4, Mods" />
+				<property name="Model" value="#CCTV_v2_1?CCTVPanCam4_v2Prefab" />
+			</block>
+		</append>
+	</config>
+	
+	<config name="loot">
+		<append xpath="/lootcontainers/lootgroup[@name='rareTools']">
+			<item name="CCTVSystem" prob="0.35" />
+		</append>
+	</config>
+</configs>
