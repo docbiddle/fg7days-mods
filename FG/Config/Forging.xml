@@ -1,14 +1,34 @@
 <configs>
 	<config name="recipes">
 			<append xpath="/recipes">
+			<recipe name="TitaniumFragment" count="1" tooltip="ttScrapMetalBrass">
+				<wildcard_forge_category />
+			</recipe>
+			<recipe name="TitaniumFragment" count="1" craft_area="forge" material_based="true" craft_time = "1" craft_exp_gain="0">
+				<ingredient name="unit_titanium" count="1"/>
+			</recipe>
 				<recipe name="ForgedTitanium" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">
 					<ingredient name="unit_clay" count="2"/>
 					<ingredient name="unit_lead" count="2"/>
 					<ingredient name="unit_titanium" count="5"/>
 				</recipe>
+				<recipe name="CopperFragment" count="1" tooltip="ttScrapMetalBrass">
+				<wildcard_forge_category />
+			</recipe>
+			<recipe name="CopperFragment" count="1" craft_area="forge" material_based="true" craft_time = "1" craft_exp_gain="0">
+				<ingredient name="unit_copper" count="1"/>
+			</recipe>
+				<recipe name="ForgedCopper" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">
+					<ingredient name="unit_clay" count="2"/>
+					<ingredient name="unit_copper" count="5"/>
+				</recipe>
+
+
 			</append>
+			
 	</config>
-	<config name="XUi/windows">
-			<set xpath="//window[@name='SMXForgeInput']/@materials_accepted">iron,brass,lead,glass,stone,clay,copper,titanium</set>
+	
+	<config name="blocks">
+		<set xpath="//block[@name='forge']//property[@name='InputMaterials']/@value">iron,titanium,copper,lead,stone,clay</set>
 	</config>
 </configs>
