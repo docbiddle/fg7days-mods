@@ -15,6 +15,7 @@
 				<property name="Experience" value="5.0"/>
 			</material>
 			<material id="carbonsteel">
+				<property name="damage_category" value="metal" />
 				<property name="surface_category" value="metal" />
 				<property name="forge_category" value="carbonsteel" />
 				<property name="Hardness" type="float" value="1" />
