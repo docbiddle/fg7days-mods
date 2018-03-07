@@ -1,0 +1,43 @@
+<configs>
+	<config name="recipes">
+		<append xpath="/recipes">
+			<recipe name="shotgunSlugSilver" count="5" craft_area="workbench">
+				<ingredient name="shotgunSlug" count="5" />
+				<ingredient name="ForgedSilver" count="1" />
+			</recipe>
+			<recipe name="shotgunSlugFMJ" count="5" craft_area="workbench">
+				<ingredient name="shotgunSlug" count="5" />
+				<ingredient name="ForgedCopper" count="1" />
+			</recipe>
+		</append>
+	</config>
+	<config name="items">
+		<append xpath="/items">		
+			<item id="*" name="shotgunSlugSilver">
+				<property name="Extends" value="shotgunSlug" />
+				<property name="DescriptionKey" value="shotgunSlugSilverDesc" />
+				<property name="CustomIcon" value="shotgunSlug" />
+				<property name="CustomIconTint" value="C0C0C0" />
+				<property name="EconomicValue" value="14" />
+				<property class="Attributes">
+					<property name="GetQualityFromWeapon" value="true" />
+					<property name="EntityDamage" value="8,20" />
+					<property name="BlockDamage" value="1,3" />
+				</property>
+			</item>
+			<item id="*" name="shotgunSlugFMJ">
+				<property name="Extends" value="shotgunSlug" />
+				<property name="DescriptionKey" value="shotgunSlugFMJDesc" />
+				<property name="CustomIcon" value="shotgunSlug" />
+				<property name="CustomIconTint" value="B87333" />
+				<property name="EconomicValue" value="14" />
+				<property class="Attributes">
+					<property name="GetQualityFromWeapon" value="true" />
+					<property name="EntityDamage" value="8,20" />
+					<property name="BlockDamage" value="1,3" />
+				</property>
+			</item>	
+		</append>
+		<set xpath="//item[@name='gunPumpShotgun']//property[@name='Magazine_items']/@value">shotgunShell,shotgunSlug,shotgunSlugFMJ,shotgunSlugSilver</set>
+	</config>
+</configs>

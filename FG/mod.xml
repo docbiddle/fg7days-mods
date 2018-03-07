@@ -18,9 +18,13 @@
 		<!--
 		<import file="Config\Tools.xml" />
 		<import file="Config\Weapons.xml" />
-		<import file="Config\Ammo.xml" />
-		
 		-->
+		<import file="Config\Ammo\9mm.xml" />
+		<import file="Config\Ammo\762mm.xml" />
+		<import file="Config\Ammo\44mag.xml" />
+		<import file="Config\Ammo\shotgunSlug.xml" />
+		
+		
     </config_mods>
 	
 </mod>

@@ -1,0 +1,45 @@
+<configs>
+	<config name="recipes">
+		<append xpath="/recipes">
+			<recipe name="9mmBulletSilver" count="5" craft_area="workbench">
+				<ingredient name="9mmBullet" count="5" />
+				<ingredient name="ForgedSilver" count="1" />
+			</recipe>
+			<recipe name="9mmBulletFMJ" count="5" craft_area="workbench">
+				<ingredient name="9mmBullet" count="5" />
+				<ingredient name="ForgedCopper" count="1" />
+			</recipe>
+		</append>
+	</config>
+	<config name="items">
+		<append xpath="/items">		
+			<item id="*" name="9mmBulletSilver">
+				<property name="Extends" value="9mmBullet" />
+				<property name="DescriptionKey" value="9mmBulletSilverDesc" />
+				<property name="CustomIcon" value="9mmBullet" />
+				<property name="CustomIconTint" value="C0C0C0" />
+				<property name="EconomicValue" value="14" />
+				<property class="Attributes">
+					<property name="GetQualityFromWeapon" value="true" />
+					<property name="EntityDamage" value="8,20" />
+					<property name="BlockDamage" value="1,3" />
+				</property>
+			</item>
+			<item id="*" name="9mmBulletFMJ">
+				<property name="Extends" value="9mmBullet" />
+				<property name="DescriptionKey" value="9mmBulletFMJDesc" />
+				<property name="CustomIcon" value="9mmBullet" />
+				<property name="CustomIconTint" value="B87333" />
+				<property name="EconomicValue" value="14" />
+				<property class="Attributes">
+					<property name="GetQualityFromWeapon" value="true" />
+					<property name="EntityDamage" value="8,20" />
+					<property name="BlockDamage" value="1,3" />
+				</property>
+			</item>	
+		</append>
+		<set xpath="//item[@name='gunPistol']//property[@name='Magazine_items']/@value">9mmBullet,9mmBulletFMJ,9mmBulletSilver</set>
+		<set xpath="//item[@name='gunPistolSilenced']//property[@name='Magazine_items']/@value">9mmBullet,9mmBulletFMJ,9mmBulletSilver</set>
+		<set xpath="//item[@name='gunMP5']//property[@name='Magazine_items']/@value">9mmBullet,9mmBulletFMJ,9mmBulletSilver</set>
+	</config>
+</configs>
