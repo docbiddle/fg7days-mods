@@ -24,6 +24,7 @@
 		<import file="Config\Ammo\44mag.xml" />
 		<import file="Config\Ammo\shotgunSlug.xml" />
 		
+		<import file="Config\Tools\Auger.xml" />
 		
     </config_mods>
 	

@@ -1,0 +1,376 @@
+<configs>
+	<config name="recipes">
+		<append xpath="/recipes">
+                        <recipe name="augerSteel" count="1" craft_area="assembly">
+                                <ingredient name="partsHandlebars" count="1" />
+                                <ingredient name="smallEngine" count="1" />
+                                <ingredient name="partsAuger_parts" count="1" />
+                                <ingredient name="augerSteelBlade" count="1" />
+                        </recipe>
+
+                        <recipe name="augerSteelBlade" count="1" craft_area="workbench" >
+                                <ingredient name="forgedSteel" count="100" />
+                        </recipe>
+
+                        <recipe name="augerSteelSilver" count="1" craft_area="assembly">
+                                <ingredient name="partsHandlebars" count="1" />
+                                <ingredient name="smallEngine" count="1" />
+                                <ingredient name="partsAuger_parts" count="1" />
+                                <ingredient name="augerSteelSilverBlade" count="1" />
+                        </recipe>
+
+                        <recipe name="augerSteelSilverBlade" count="1" craft_area="workbench" >
+                                <ingredient name="augerSteelBlade" count="1" />
+                                <ingredient name="ForgedSilver" count="10" />
+                        </recipe>
+
+                        <recipe name="augerSteelCopper" count="1" craft_area="assembly">
+                                <ingredient name="partsHandlebars" count="1" />
+                                <ingredient name="smallEngine" count="1" />
+                                <ingredient name="partsAuger_parts" count="1" />
+                                <ingredient name="augerSteelCopperBlade" count="1" />
+                        </recipe>
+
+                        <recipe name="augerSteelCopperBlade" count="1" craft_area="workbench" >
+                                <ingredient name="augerSteelBlade" count="1" />
+                                <ingredient name="ForgedCopper" count="10" />
+                        </recipe>
+
+                        <recipe name="augerCarbonSteel" count="1" craft_area="assembly">
+                                <ingredient name="partsHandlebars" count="1" />
+                                <ingredient name="smallEngine" count="1" />
+                                <ingredient name="partsAuger_parts" count="1" />
+                                <ingredient name="augerCarbonSteelBlade" count="1" />
+                        </recipe>
+
+                        <recipe name="augerCarbonSteelBlade" count="1" craft_area="workbench" >
+                                <ingredient name="ForgedCarbonSteel" count="100" />
+                        </recipe>
+
+                        <recipe name="augerCarbonSteelSilver" count="1" craft_area="assembly">
+                                <ingredient name="partsHandlebars" count="1" />
+                                <ingredient name="smallEngine" count="1" />
+                                <ingredient name="partsAuger_parts" count="1" />
+                                <ingredient name="augerCarbonSteelSilverBlade" count="1" />
+                        </recipe>
+
+                        <recipe name="augerCarbonSteelSilverBlade" count="1" craft_area="workbench" >
+                                <ingredient name="augerCarbonSteelBlade" count="1" />
+                                <ingredient name="ForgedSilver" count="10" />
+                        </recipe>
+
+                        <recipe name="augerCarbonSteelCopper" count="1" craft_area="assembly">
+                                <ingredient name="partsHandlebars" count="1" />
+                                <ingredient name="smallEngine" count="1" />
+                                <ingredient name="partsAuger_parts" count="1" />
+                                <ingredient name="augerCarbonSteelCopperBlade" count="1" />
+                        </recipe>
+
+                        <recipe name="augerCarbonSteelCopperBlade" count="1" craft_area="workbench" >
+                                <ingredient name="augerCarbonSteelBlade" count="1" />
+                                <ingredient name="ForgedCopper" count="10" />
+                        </recipe>
+
+                        <recipe name="augerTitanium" count="1" craft_area="assembly">
+                                <ingredient name="partsHandlebars" count="1" />
+                                <ingredient name="smallEngine" count="1" />
+                                <ingredient name="partsAuger_parts" count="1" />
+                                <ingredient name="augerTitaniumBlade" count="1" />
+                        </recipe>
+
+                        <recipe name="augerTitaniumBlade" count="1" craft_area="workbench" >
+                                <ingredient name="ForgedTitanium" count="100" />
+                        </recipe>
+
+                        <recipe name="augerTitaniumSilver" count="1" craft_area="assembly">
+                                <ingredient name="partsHandlebars" count="1" />
+                                <ingredient name="smallEngine" count="1" />
+                                <ingredient name="partsAuger_parts" count="1" />
+                                <ingredient name="augerTitaniumSilverBlade" count="1" />
+                        </recipe>
+
+                        <recipe name="augerTitaniumSilverBlade" count="1" craft_area="workbench" >
+                                <ingredient name="augerTitaniumBlade" count="1" />
+                                <ingredient name="ForgedSilver" count="10" />
+                        </recipe>
+
+                        <recipe name="augerTitaniumCopper" count="1" craft_area="assembly">
+                                <ingredient name="partsHandlebars" count="1" />
+                                <ingredient name="smallEngine" count="1" />
+                                <ingredient name="partsAuger_parts" count="1" />
+                                <ingredient name="augerTitaniumCopperBlade" count="1" />
+                        </recipe>
+
+                        <recipe name="augerTitaniumCopperBlade" count="1" craft_area="workbench" >
+                                <ingredient name="augerTitaniumBlade" count="1" />
+                                <ingredient name="ForgedCopper" count="10" />
+                        </recipe>
+
+
+		</append>
+	</config>
+	<config name="items">
+		<append xpath="/items">		
+
+                        <item id="*" name="augerSteel">
+                                <property name="Extends" value="auger" />
+                                <property name="CustomIcon" value="auger" />
+                                <property name="EconomicValue" value="4800" />
+                                <property name="Material" value="metal" />
+                                <property name="Weight" value="600" />
+                                <property class="Parts">
+                                        <property name="Barrel" value="augerSteelBlade" />
+                                </property>
+                                <property class="Action0">
+                                        <property name="Magazine_size" value="750" />
+                                        <property name="DamageBonus.stone" value="2.75" />
+                                        <property name="DamageBonus.metal" value="1.75" />
+                                </property>
+                        </item>
+
+                        <item id="*" name="augerSteelBlade">
+                                <property name="Extends" value="partsAuger_blade" />
+                                <property name="CustomIcon" value="partsAuger_blade" />
+                                <property name="EconomicValue" value="900" />
+                                <property class="Attributes">
+                                        <property name="EntityDamage" value="6,10" />
+                                        <property name="BlockDamage" value="25,45" />
+                                </property>
+                        </item>
+
+                        <item id="*" name="augerSteelSilver">
+                                <property name="Extends" value="auger" />
+                                <property name="CustomIcon" value="auger" />
+                                <property name="CustomIconTint" value="C0C0C0" />
+
+                                <property name="EconomicValue" value="4800" />
+                                <property name="Material" value="metal" />
+                                <property name="Weight" value="600" />
+                                <property class="Parts">
+                                        <property name="Barrel" value="augerSteelSilverBlade" />
+                                </property>
+                                <property class="Action0">
+                                        <property name="Magazine_size" value="750" />
+                                        <property name="DamageBonus.stone" value="2.75" />
+                                        <property name="DamageBonus.metal" value="1.75" />
+                                </property>
+                        </item>
+
+                        <item id="*" name="augerSteelSilverBlade">
+                                <property name="Extends" value="partsAuger_blade" />
+                                <property name="CustomIcon" value="partsAuger_blade" />
+                                <property name="CustomIconTint" value="C0C0C0" />
+
+                                <property name="EconomicValue" value="900" />
+                                <property class="Attributes">
+                                        <property name="EntityDamage" value="6,10" />
+                                        <property name="BlockDamage" value="25,45" />
+                                </property>
+                        </item>
+
+                        <item id="*" name="augerSteelCopper">
+                                <property name="Extends" value="auger" />
+                                <property name="CustomIcon" value="auger" />
+                                <property name="CustomIconTint" value="B87333" />
+
+                                <property name="EconomicValue" value="4800" />
+                                <property name="Material" value="metal" />
+                                <property name="Weight" value="600" />
+                                <property class="Parts">
+                                        <property name="Barrel" value="augerSteelCopperBlade" />
+                                </property>
+                                <property class="Action0">
+                                        <property name="Magazine_size" value="750" />
+                                        <property name="DamageBonus.stone" value="2.75" />
+                                        <property name="DamageBonus.metal" value="1.75" />
+                                </property>
+                        </item>
+
+                        <item id="*" name="augerSteelCopperBlade">
+                                <property name="Extends" value="partsAuger_blade" />
+                                <property name="CustomIcon" value="partsAuger_blade" />
+                                <property name="CustomIconTint" value="B87333" />
+
+                                <property name="EconomicValue" value="900" />
+                                <property class="Attributes">
+                                        <property name="EntityDamage" value="6,10" />
+                                        <property name="BlockDamage" value="25,45" />
+                                </property>
+                        </item>
+
+                        <item id="*" name="augerCarbonSteel">
+                                <property name="Extends" value="auger" />
+                                <property name="CustomIcon" value="auger" />
+                                <property name="EconomicValue" value="4800" />
+                                <property name="Material" value="metal" />
+                                <property name="Weight" value="600" />
+                                <property class="Parts">
+                                        <property name="Barrel" value="augerCarbonSteelBlade" />
+                                </property>
+                                <property class="Action0">
+                                        <property name="Magazine_size" value="750" />
+                                        <property name="DamageBonus.stone" value="2.75" />
+                                        <property name="DamageBonus.metal" value="1.75" />
+                                </property>
+                        </item>
+
+                        <item id="*" name="augerCarbonSteelBlade">
+                                <property name="Extends" value="partsAuger_blade" />
+                                <property name="CustomIcon" value="partsAuger_blade" />
+                                <property name="EconomicValue" value="900" />
+                                <property class="Attributes">
+                                        <property name="EntityDamage" value="6,10" />
+                                        <property name="BlockDamage" value="25,45" />
+                                </property>
+                        </item>
+
+                        <item id="*" name="augerCarbonSteelSilver">
+                                <property name="Extends" value="auger" />
+                                <property name="CustomIcon" value="auger" />
+                                <property name="CustomIconTint" value="C0C0C0" />
+
+                                <property name="EconomicValue" value="4800" />
+                                <property name="Material" value="metal" />
+                                <property name="Weight" value="600" />
+                                <property class="Parts">
+                                        <property name="Barrel" value="augerCarbonSteelSilverBlade" />
+                                </property>
+                                <property class="Action0">
+                                        <property name="Magazine_size" value="750" />
+                                        <property name="DamageBonus.stone" value="2.75" />
+                                        <property name="DamageBonus.metal" value="1.75" />
+                                </property>
+                        </item>
+
+                        <item id="*" name="augerCarbonSteelSilverBlade">
+                                <property name="Extends" value="partsAuger_blade" />
+                                <property name="CustomIcon" value="partsAuger_blade" />
+                                <property name="CustomIconTint" value="C0C0C0" />
+
+                                <property name="EconomicValue" value="900" />
+                                <property class="Attributes">
+                                        <property name="EntityDamage" value="6,10" />
+                                        <property name="BlockDamage" value="25,45" />
+                                </property>
+                        </item>
+
+                        <item id="*" name="augerCarbonSteelCopper">
+                                <property name="Extends" value="auger" />
+                                <property name="CustomIcon" value="auger" />
+                                <property name="CustomIconTint" value="B87333" />
+
+                                <property name="EconomicValue" value="4800" />
+                                <property name="Material" value="metal" />
+                                <property name="Weight" value="600" />
+                                <property class="Parts">
+                                        <property name="Barrel" value="augerCarbonSteelCopperBlade" />
+                                </property>
+                                <property class="Action0">
+                                        <property name="Magazine_size" value="750" />
+                                        <property name="DamageBonus.stone" value="2.75" />
+                                        <property name="DamageBonus.metal" value="1.75" />
+                                </property>
+                        </item>
+
+                        <item id="*" name="augerCarbonSteelCopperBlade">
+                                <property name="Extends" value="partsAuger_blade" />
+                                <property name="CustomIcon" value="partsAuger_blade" />
+                                <property name="CustomIconTint" value="B87333" />
+
+                                <property name="EconomicValue" value="900" />
+                                <property class="Attributes">
+                                        <property name="EntityDamage" value="6,10" />
+                                        <property name="BlockDamage" value="25,45" />
+                                </property>
+                        </item>
+
+                        <item id="*" name="augerTitanium">
+                                <property name="Extends" value="auger" />
+                                <property name="CustomIcon" value="auger" />
+                                <property name="EconomicValue" value="4800" />
+                                <property name="Material" value="metal" />
+                                <property name="Weight" value="600" />
+                                <property class="Parts">
+                                        <property name="Barrel" value="augerTitaniumBlade" />
+                                </property>
+                                <property class="Action0">
+                                        <property name="Magazine_size" value="750" />
+                                        <property name="DamageBonus.stone" value="2.75" />
+                                        <property name="DamageBonus.metal" value="1.75" />
+                                </property>
+                        </item>
+
+                        <item id="*" name="augerTitaniumBlade">
+                                <property name="Extends" value="partsAuger_blade" />
+                                <property name="CustomIcon" value="partsAuger_blade" />
+                                <property name="EconomicValue" value="900" />
+                                <property class="Attributes">
+                                        <property name="EntityDamage" value="6,10" />
+                                        <property name="BlockDamage" value="25,45" />
+                                </property>
+                        </item>
+
+                        <item id="*" name="augerTitaniumSilver">
+                                <property name="Extends" value="auger" />
+                                <property name="CustomIcon" value="auger" />
+                                <property name="CustomIconTint" value="C0C0C0" />
+
+                                <property name="EconomicValue" value="4800" />
+                                <property name="Material" value="metal" />
+                                <property name="Weight" value="600" />
+                                <property class="Parts">
+                                        <property name="Barrel" value="augerTitaniumSilverBlade" />
+                                </property>
+                                <property class="Action0">
+                                        <property name="Magazine_size" value="750" />
+                                        <property name="DamageBonus.stone" value="2.75" />
+                                        <property name="DamageBonus.metal" value="1.75" />
+                                </property>
+                        </item>
+
+                        <item id="*" name="augerTitaniumSilverBlade">
+                                <property name="Extends" value="partsAuger_blade" />
+                                <property name="CustomIcon" value="partsAuger_blade" />
+                                <property name="CustomIconTint" value="C0C0C0" />
+
+                                <property name="EconomicValue" value="900" />
+                                <property class="Attributes">
+                                        <property name="EntityDamage" value="6,10" />
+                                        <property name="BlockDamage" value="25,45" />
+                                </property>
+                        </item>
+
+                        <item id="*" name="augerTitaniumCopper">
+                                <property name="Extends" value="auger" />
+                                <property name="CustomIcon" value="auger" />
+                                <property name="CustomIconTint" value="B87333" />
+
+                                <property name="EconomicValue" value="4800" />
+                                <property name="Material" value="metal" />
+                                <property name="Weight" value="600" />
+                                <property class="Parts">
+                                        <property name="Barrel" value="augerTitaniumCopperBlade" />
+                                </property>
+                                <property class="Action0">
+                                        <property name="Magazine_size" value="750" />
+                                        <property name="DamageBonus.stone" value="2.75" />
+                                        <property name="DamageBonus.metal" value="1.75" />
+                                </property>
+                        </item>
+
+                        <item id="*" name="augerTitaniumCopperBlade">
+                                <property name="Extends" value="partsAuger_blade" />
+                                <property name="CustomIcon" value="partsAuger_blade" />
+                                <property name="CustomIconTint" value="B87333" />
+
+                                <property name="EconomicValue" value="900" />
+                                <property class="Attributes">
+                                        <property name="EntityDamage" value="6,10" />
+                                        <property name="BlockDamage" value="25,45" />
+                                </property>
+                        </item>
+
+
+		</append>
+	</config>
+</configs>
