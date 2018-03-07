@@ -259,77 +259,53 @@
 		</append>
 	</config>
 		<config name="biomes">
-		<append xpath="/worldgeneration/biomes/biome[@name='snow']/layers/layer[@depth='10']">
+		<!-- snow -->
+		<insertBefore xpath="/worldgeneration/biomes/biome[@name='snow']/layers/layer[@blockname='stone']/resource[@blockname='ironOre']">
 			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
 			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
 			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
 			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
-		</append>
-		<append xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome/layers/layer[@depth='10']">
+		</insertBefore>
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/layers/layer[@blockname='stone']/resource[@blockname='silverOre']/@prob">0.005</set>
+		<!-- forest -->
+		<insertBefore xpath="/worldgeneration/biomes/biome[@name='forest']/layers/layer[@blockname='stone']/resource[@blockname='ironOre']">
 			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
 			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
 			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
 			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
-		</append>
-		<append xpath="/worldgeneration/biomes/biome[@name='forest']/layers/layer[@depth='10']">
+		</insertBefore>
+		<set xpath="/worldgeneration/biomes/biome[@name='forest']/layers/layer[@blockname='stone']/resource[@blockname='silverOre']/@prob">0.005</set>
+		<!-- pine_forest -->
+		<insertBefore xpath="/worldgeneration/biomes/biome[@name='pine_forest']/layers/layer[@blockname='stone']/resource[@blockname='ironOre']">
 			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
 			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
 			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
 			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
-		</append>
-		<append xpath="/worldgeneration/biomes/biome[@name='forest']/subbiome/layers/layer[@depth='10']">
+		</insertBefore>
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/layers/layer[@blockname='stone']/resource[@blockname='silverOre']/@prob">0.005</set>
+		<!-- plains -->
+		<insertBefore xpath="/worldgeneration/biomes/biome[@name='plains']/layers/layer[@blockname='stone']/resource[@blockname='ironOre']">
 			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
 			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
 			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
 			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
-		</append>
-		<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/layers/layer[@depth='10']">
+		</insertBefore>
+		<set xpath="/worldgeneration/biomes/biome[@name='plains']/layers/layer[@blockname='stone']/resource[@blockname='silverOre']/@prob">0.005</set>
+		<!-- wasteland -->
+		<insertBefore xpath="/worldgeneration/biomes/biome[@name='wasteland']/layers/layer[@blockname='stone']/resource[@blockname='ironOre']">
 			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
 			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
 			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
 			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
-		</append>
-		<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome/layers/layer[@depth='10']">
+		</insertBefore>
+		<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/layers/layer[@blockname='stone']/resource[@blockname='silverOre']/@prob">0.005</set>
+		<!-- burnt_forest -->
+		<insertBefore xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/layers/layer[@blockname='stone']/resource[@blockname='ironOre']">
 			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
 			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
 			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
 			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
-		</append>
-		<append xpath="/worldgeneration/biomes/biome[@name='plains']/layers/layer[@depth='10']">
-			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
-			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
-			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
-			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
-		</append>
-		<append xpath="/worldgeneration/biomes/biome[@name='plains']/subbiome/layers/layer[@depth='10']">
-			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
-			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
-			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
-			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
-		</append>
-		<append xpath="/worldgeneration/biomes/biome[@name='wasteland']/layers/layer[@depth='10']">
-			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
-			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
-			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
-			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
-		</append>
-		<append xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome/layers/layer[@depth='10']">
-			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
-			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
-			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
-			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
-		</append>
-		<append xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/layers/layer[@depth='10']">
-			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
-			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
-			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
-			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
-		</append>
-		<append xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/subbiome/layers/layer[@depth='10']">
-			<resource blockname="copperOre" cluster="1" prob="0.09" rwgGenerationType="all" />
-			<resource blockname="gravelPlusCopper" cluster="1" prob="0.63" rwgGenerationType="all" />
-			<resource blockname="titaniumOre" cluster="1" prob="0.05" rwgGenerationType="all" />
-			<resource blockname="gravelPlusTitanium" cluster="1" prob="0.35" rwgGenerationType="all" />
-		</append>
+		</insertBefore>
+		<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/layers/layer[@blockname='stone']/resource[@blockname='silverOre']/@prob">0.005</set>
 	</config>
 </configs>
