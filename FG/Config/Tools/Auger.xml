@@ -369,8 +369,75 @@
                                         <property name="BlockDamage" value="25,45" />
                                 </property>
                         </item>
-
+						
+						
+						
+						
+						<item id="*" name="augerSteelSchematic">
+							<property name="CustomIcon" value="augerSchematic"/>
+							<property name="Extends" value="schematicMaster" />
+							<property name="EconomicValue" value="500" />
+							<property class="Action1">
+								<property name="Recipes_to_learn" value="augerSteel,augerSteelBlade,augerSteelCopper,augerSteelCopperBlade,augerSteelSilver,augerSteelSilverBlade" />
+							</property>
+							<property name="PickupJournalEntry" value="gunAssemblyTip" />
+						</item>
+						<item id="*" name="augerCarbonSteelSchematic">
+							<property name="CustomIcon" value="augerSchematic"/>
+							<property name="Extends" value="schematicMaster" />
+							<property name="EconomicValue" value="500" />
+							<property class="Action1">
+								<property name="Recipes_to_learn" value="augerCarbonSteel,augerCarbonSteelBlade,augerCarbonSteelCopper,augerCarbonSteelCopperBlade,augerCarbonSteelSilver,augerCarbonSteelSilverBlade" />
+							</property>
+							<property name="PickupJournalEntry" value="gunAssemblyTip" />
+						</item>
+						<item id="*" name="augerTitaniumSchematic">
+							<property name="CustomIcon" value="augerSchematic"/>
+							<property name="Extends" value="schematicMaster" />
+							<property name="EconomicValue" value="500" />
+							<property class="Action1">
+								<property name="Recipes_to_learn" value="augerTitanium,augerTitaniumBlade,augerTitaniumCopper,augerTitaniumCopperBlade,augerTitaniumSilver,augerTitaniumSilverBlade" />
+							</property>
+							<property name="PickupJournalEntry" value="gunAssemblyTip" />
+						</item>
 
 		</append>
+	
+	</config>
+	<config name="progression">
+		<append xpath="/progression/skills">
+			<perk name="Augersmithing" icon="wrench" description_key="augerSmithingDesc" title_key="augerSmithing" max_level="4" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
+				<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="6" />
+				<requirement skill_level="2" required_skill_name="craftSkillTools" required_skill_level="7" />
+				<requirement skill_level="3" required_skill_name="craftSkillTools" required_skill_level="8" />
+				<requirement skill_level="4" required_skill_name="craftSkillTools" required_skill_level="9" />
+
+				<recipe name="auger" unlock_level="1" />
+				<recipe name="partsAuger_blade" unlock_level="1" />
+				
+				<recipe name="augerSteel" unlock_level="2" />
+				<recipe name="augerSteelBlade" unlock_level="2" />
+				<recipe name="augerSteelCopper" unlock_level="2" />
+				<recipe name="augerSteelCopperBlade" unlock_level="2" />
+				<recipe name="augerSteelSilver" unlock_level="2" />
+				<recipe name="augerSteelSilverBlade" unlock_level="2" />
+		
+				
+				<recipe name="augerCarbonSteel" unlock_level="2" />
+				<recipe name="augerCarbonSteelBlade" unlock_level="3" />
+				<recipe name="augerCarbonSteelSilver" unlock_level="3" />
+				<recipe name="augerCarbonSteelSilverBlade" unlock_level="3" />
+				<recipe name="augerCarbonSteelCopper" unlock_level="3" />
+				<recipe name="augerCarbonSteelCopperBlade" unlock_level="3" />
+				
+				<recipe name="augerTitanium" unlock_level="4" />
+				<recipe name="augerTitaniumBlade" unlock_level="4" />
+				<recipe name="augerTitaniumCopper" unlock_level="4" />
+				<recipe name="augerTitaniumCopperBlade" unlock_level="4" />
+				<recipe name="augerTitaniumSilver" unlock_level="4" />
+				<recipe name="augerTitaniumSilverBlade" unlock_level="4" />
+			</perk>
+		</append>
+	
 	</config>
 </configs>
